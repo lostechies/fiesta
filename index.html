@@ -41,12 +41,15 @@
 			margin-top:-41px;
 
 		}
-		
+		.ui-tabs .ui-tabs-nav li{
+			display:block;
+		}
 		.ui-tabs .ui-tabs-nav li a{
 			font-size:.75em;
 		}
 		#title-section{
 			margin-bottom:50px;
+/*			float:right;*/
 		}
 		#sub-title{
 			color:#444444;
@@ -56,6 +59,9 @@
 			height:100%;
 			float:left;
 			margin-right:1.2em;
+		}
+		#content-wrapper ul{
+			display:block;
 		}
 		#open-space-reference, #open-space-reference a{
 			font-style:italic;
@@ -67,6 +73,7 @@
 			margin-bottom: 1.1em;
 		}
 		#sponsors{
+
 			margin-left:5px;
 			padding-left:50%;
 		}
@@ -74,7 +81,10 @@
 			padding-left:1.2em;
 			list-style:none;
 			margin-top:1.1em;
+			padding-left:20px;
+			padding-right:20px;
 			margin-bottom:1.1em;
+			width:200px;
 		}
 		#sponsor-list li{
 			margin-top:1.1em;
@@ -92,19 +102,17 @@
 		<img src="lostechies_logo.png">
 		</a>
 	</div>
-	<div id="title-section">
-		<h2>Pablo's Fiesta 2011</h2>
-		<h4 id="sub-title">Los Techies Open Space Conference on Software Quality &amp; Craftsmanship</h4>
-		<div id="title-location">
-			<span>When: September 30, October 1, &amp; 2</span><br/>
-			<span>Where: St. Edward's Professional Educational Center, Austin TX</span>
-			<br/><br/>
-			<span>Wiki: <a href="http://pablosfiesta.pbworks.com">http://pablosfiesta.pbworks.com</a></span>
-		</div>			
-	</div>
-
 	<div id=content-wrapper>
-		
+		<div id="title-section">
+			<h2>Pablo's Fiesta 2011</h2>
+			<h4 id="sub-title">Los Techies Open Space Conference on Software Quality &amp; Craftsmanship</h4>
+			<div id="title-location">
+				<span>When: September 30, October 1, &amp; 2</span><br/>
+				<span>Where: St. Edward's Professional Educational Center, Austin TX</span>
+				<br/><br/>
+				<span>Wiki: <a href="http://pablosfiesta.pbworks.com">http://pablosfiesta.pbworks.com</a></span>
+			</div>			
+		</div>
 	<div id="content">
 		<ul >
 			<li>
@@ -249,10 +257,9 @@
 				 --></div>
 	</div>
 	</div>
-
-	<div id="sponsors"> 
-		<h3> Our Sponsors </h3>
-		<ul id="sponsor-list">
+	<div id="sponsors" class="ui-widget"> 
+		<h3 class=""> Our Sponsors </h3>
+		<ul id="sponsor-list" class=" ui-widget-content ui-corner-all">
 			<li>
 				<a href="http://www.pec.stedwards.edu/" target="_blank" title="St. Edwards PEC">
 					<img src="PEC_new_logo.png" width="200" height="52" alt="PEC New Logo"/>
@@ -274,8 +281,25 @@
 				</a>
 			</li>
 			<li>
+				<a href="github.com" target="_blank" title="GitHub">
+					<img src="GitHub.png" width="200" />
+				</a>
+			</li>
+			<!--
+			<li>
+				<a href="jetbrains.com" target="_blank" title="JetBrains">
+					<img src="JetBrains.png" width="200" />
+				</a>
+			</li>
+			-->
+			<li>
 				<a href="http://actualizesoftware.com/" target="_blank" title="Actualize Software">
 					<img src="actualize.png" width="200" />
+				</a>
+			</li>
+			<li>
+				<a href="http://surgerylogistics.com/" target="_blank" title="Surgery Logistics">
+					<img src="surgerylogistics.png" width="200" />
 				</a>
 			</li>
 			<li>
@@ -293,10 +317,16 @@
 					<img src="RavenDBlogo.png" width="200" />
 				</a>
 			</li>
-        
-		
+	        <!-- <li>
+	       				<a href="http://whalshark.com/" target="_blank" title="WhaleShark Media">
+	       					<img src="RavenDBlogo.png" width="200" />
+	       				</a>
+	       			</li> -->
+
+
 		</ul>
-		
+
 	</div>
-</body>
+	
+	</body>
 </html>
