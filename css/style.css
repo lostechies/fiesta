@@ -1,6 +1,29 @@
+#full-screen-background-image {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#body-bg
+h1,
+h2,
+p
+{
+
+}
+
+#body-bg .container-narrow{
+background-color: rgba(180,181,168,.68);
+}
+
 body {
   padding-top: 40px;
   font-family: 'Roboto', sans-serif;
+
 }
 
 h2 {
@@ -11,6 +34,7 @@ h2 {
 .container-narrow {
   margin: 0 auto;
   max-width: 700px;
+  
 }
 .container-narrow > hr {
   margin: 30px 0;
